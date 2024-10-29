@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -7,7 +7,7 @@ body {
   max-width: 1440px;
   padding: 171px 105px 82px 106px;
   clear: both;
-}
+} */
 
 li {
   list-style: none;
