@@ -341,3 +341,43 @@ option {
   position: absolute;
   top: 14px;
 }
+
+.section-pages {
+  justify-content: end;
+  margin-bottom: 94px;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.pages-number {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+}
+
+.pages-number:hover,
+.current-pages {
+  background: rgba(70, 163, 88, 1);
+  cursor: pointer;
+}
+
+.pages-link {
+  display: block;
+  color: rgba(61, 61, 61, 1);
+  padding: 9px 12px;
+}
+
+.pages-link:hover,
+.current-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+}
