@@ -47,7 +47,8 @@ header {
 }
 
 .currrent-page,
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
   border-bottom: 3px solid rgba(70, 163, 88, 1);
 
   font-size: 16px;
@@ -175,7 +176,8 @@ aside {
 }
 
 .current-categories,
-.aside-link:hover {
+.aside-link:hover,
+.aside-link:focus {
   font-weight: bold;
   color: rgba(70, 163, 88, 1);
 }
@@ -215,7 +217,8 @@ aside {
 }
 
 .current-nav,
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   font-weight: bold;
   color: rgba(70, 163, 88, 1);
 
@@ -386,6 +389,16 @@ option {
   line-height: 16px;
 }
 
+.pages-link:focus {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  background: rgba(70, 163, 88, 1);
+  padding: 9px 12px;
+  border-radius: 4px;
+}
+
 .section-blog {
   display: block;
   margin-bottom: 100px;
@@ -514,7 +527,8 @@ h2 {
   line-height: 16px;
 }
 
-.blog-link:hover {
+.blog-link:hover,
+.blog-link:focus {
   color: rgba(70, 163, 88, 1);
 }
 
