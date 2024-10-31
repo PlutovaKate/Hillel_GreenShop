@@ -55,6 +55,10 @@ header {
   line-height: 20px;
 }
 
+.site-nav-width {
+  width: 80px;
+}
+
 button {
   min-width: 100px;
   height: 35px;
@@ -76,4 +80,65 @@ button {
 
 .btn_logout {
   margin-right: 4px;
+}
+
+section {
+  border: 1px solid red;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+}
+
+.hero-welcome {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  /* margin: 68px 0px 0px 43px; */
+}
+
+h1 {
+  margin-top: 7px;
+
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.hero-span {
+  color: rgba(70, 163, 88, 1);
+}
+
+.hero-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 5px 0px 44px 3px;
+}
+
+.section-hero {
+  margin-top: 12px;
+}
+
+.hero {
+  padding: 68px 93px 85px 40px;
+}
+
+.button-link {
+  display: inline-block;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(70, 163, 88, 1);
+  border-radius: 6px;
+  padding: 10px 26px;
 }
