@@ -143,6 +143,12 @@ h1 {
 }
 
 .section-products {
+  display: block;
+  margin-bottom: 94px;
+}
+
+.wrap-section {
+  display: flex;
   margin-bottom: 90px;
 }
 
@@ -342,9 +348,9 @@ option {
   top: 14px;
 }
 
-.section-pages {
+.wrap-pages {
+  display: flex;
   justify-content: end;
-  margin-bottom: 94px;
 }
 
 .pages {
