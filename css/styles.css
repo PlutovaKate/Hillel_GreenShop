@@ -41,14 +41,14 @@ header {
   gap: 50px;
 }
 
-.nav-list a {
+.navigation {
   display: block;
   padding: 0 0 23px 0;
 }
 
 .currrent-page,
-.nav-list a:hover,
-.nav-list a:focus {
+.navigation:hover,
+.navigation:focus {
   border-bottom: 3px solid rgba(70, 163, 88, 1);
 
   font-size: 16px;
@@ -58,6 +58,78 @@ header {
 
 .site-nav-width {
   width: 80px;
+  position: relative;
+}
+
+.wrap-second-menu {
+  display: none;
+  width: 100%;
+  min-width: 188px;
+  padding-top: 20px;
+  position: absolute;
+  top: 37px;
+  left: -50px;
+}
+
+.navigation:hover .wrap-second-menu {
+  display: block;
+}
+
+.nav-additional-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-menu {
+  width: 100%;
+
+  height: 35px;
+  color: rgba(61, 61, 61, 1);
+  background: rgba(237, 246, 238, 1);
+}
+
+.additional-menu-link {
+  display: block;
+  width: 100%;
+  padding: 7px 0px 8px 14px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.additional-menu-link:hover {
+  background: rgba(26, 113, 42, 1);
+  color: rgba(255, 255, 255, 1);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.wrap-third-menu {
+  display: none;
+  width: 100%;
+  min-width: 178px;
+  position: absolute;
+  left: 188px;
+  top: 20px;
+  padding-left: 5px;
+}
+
+.additional-menu:hover > .wrap-third-menu {
+  display: block;
+}
+
+.last-item {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.material-symbols-outlined {
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -94,8 +166,6 @@ section {
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
-  /* margin: 68px 0px 0px 43px; */
 }
 
 h1 {
