@@ -907,6 +907,8 @@ footer h4 {
 
 .copyright {
   text-align: center;
+  padding-top: 7px;
+  padding-bottom: 13px;
 }
 
 .social-link svg {
