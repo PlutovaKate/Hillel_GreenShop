@@ -3,7 +3,6 @@
 }
 
 body {
-  /* max-width: 1200px; */
   width: 100%;
   margin: 25px auto 0;
 
@@ -749,12 +748,6 @@ h2 {
   margin-bottom: 24px;
 }
 
-/* .benefits {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 24px;
-} */
-
 .benefits-list {
   display: flex;
 }
@@ -1039,7 +1032,7 @@ footer h4 {
   color: #727272;
 }
 
-.password-wrap:hover svg {
+.password-wrap svg:hover {
   color: rgba(70, 163, 88, 1);
 }
 
