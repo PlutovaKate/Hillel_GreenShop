@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="preloader"></div>
+    <style>
+      body {
+        background-color: #9fdaaa;
+      }
+      .preloader::after {
+        position: absolute;
+        top: 0;
+        bottom: 4%;
+        right: 0;
+        left: 0;
+        content: " ";
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        box-sizing: border-box;
+        border: solid;
+        border-width: 14px;
+        border-radius: 50%;
+        border-top-color: rgba(70, 163, 88, 1);
+        border-bottom-color: rgba(70, 163, 88, 0.6);
+
+        border-right-color: green;
+        border-left-color: green;
+        animation: rotating 2s linear infinite;
+      }
+
+      @keyframes rotating {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </body>
+</html>
