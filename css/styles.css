@@ -24,13 +24,15 @@ header {
 }
 
 .wrap-header {
-  width: 1200px;
+  max-width: 1200px;
 
   margin-left: auto;
   margin-right: auto;
 
   display: flex;
   justify-content: space-between;
+
+  border: 1px solid red;
 }
 
 .logo {
@@ -278,10 +280,12 @@ h1 {
 }
 
 .wrap-hero {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 12px auto 46px auto;
+
+  border: 1px solid red;
 }
 
 .hero {
@@ -307,9 +311,11 @@ h1 {
 }
 
 .wrap-products {
-  width: 1200px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto 94px auto;
+
+  border: 1px solid red;
 }
 
 .wrap-section {
@@ -610,9 +616,11 @@ option {
 }
 
 .wrap-blog {
-  width: 1200px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto 100px auto;
+
+  border: 1px solid red;
 }
 
 .feature-list {
@@ -698,13 +706,16 @@ h2 {
 
 .container {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 42px;
 }
 
+.container:last-child {
+  margin-right: 0;
+}
+
 .blog-article {
-  height: 362px;
+  max-width: 268px;
   background: rgba(251, 251, 251, 1);
 }
 
@@ -769,13 +780,15 @@ h2 {
 }
 
 .wrap-benefits {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px;
   display: flex;
   gap: 30px;
   margin-bottom: 24px;
+
+  border: 1px solid red;
 }
 
 .benefits-list {
@@ -879,11 +892,13 @@ h2 {
 .wrap-address {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 27px 23px;
+
+  border: 1px solid red;
 }
 
 .address-img {
@@ -906,7 +921,7 @@ footer {
 }
 
 .wrap-footer {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 
@@ -914,6 +929,8 @@ footer {
   padding: 33px 155px 27px 25px;
   justify-content: space-between;
   margin-bottom: 6px;
+
+  border: 1px solid red;
 }
 
 .wrapper-footer {
@@ -1143,4 +1160,178 @@ footer h4 {
   border: 1px solid rgba(70, 163, 88, 1);
 }
 
-/* ////////////////////////// */
+@media screen and (max-width: 1199px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+/* @media screen and (min-width: 992px) and (max-width: 1199px)  */
+@media screen and (max-width: 1199px) {
+  .item-card:last-child {
+    display: none;
+  }
+  aside {
+    height: 1194px;
+  }
+  .nav-items {
+    gap: 10px;
+  }
+  .container {
+    gap: 100px;
+    justify-content: space-evenly;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 991px) */
+@media screen and (max-width: 991px) {
+  .wrap-hero {
+    flex-wrap: wrap;
+    padding: 44px 23px 0px;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .wrap-hero img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+
+  .wrap-aside {
+    display: none;
+  }
+
+  .wrap-section {
+    margin-bottom: 46px;
+  }
+
+  .container-product {
+    margin-left: 0;
+    padding: 0 23px;
+  }
+
+  .item-list {
+    justify-content: space-evenly;
+  }
+
+  .wrap-products {
+    margin-bottom: 46px;
+  }
+
+  .feature-list {
+    padding: 0 23px;
+    margin-bottom: 46px;
+  }
+
+  .feature-item {
+    flex-wrap: wrap;
+  }
+
+  .feature-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-info {
+    align-items: center;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+
+  .wrap-blog {
+    margin-bottom: 46px;
+  }
+
+  .container {
+    gap: 23px;
+  }
+
+  .wrap-benefits {
+    flex-wrap: wrap;
+    padding: 23px;
+    gap: 46px;
+  }
+
+  .benefits-item:first-child {
+    padding: 0 30px;
+  }
+
+  .form-email {
+    margin: 0 auto;
+  }
+
+  .wrap-address {
+    font-size: 12px;
+    padding: 23px;
+  }
+
+  .wrap-footer {
+    padding: 44px 23px 23px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+/* @media screen and (min-width: 540px) and (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .wrap-header {
+    padding: 0 23px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .nav-items {
+    gap: 20px;
+  }
+
+  .nav-items > li {
+    margin: 0;
+  }
+
+  .item-list {
+    justify-content: center;
+    gap: 46px;
+  }
+
+  .item-card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 0;
+  }
+
+  .feature-list {
+    flex-wrap: wrap;
+  }
+
+  .wrap-address {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    padding: 23px 170px;
+  }
+
+  .wrap-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrap-social {
+    margin-top: 46px;
+    display: flex;
+    gap: 65px;
+  }
+
+  .header-pay {
+    margin-bottom: 23px;
+  }
+}
