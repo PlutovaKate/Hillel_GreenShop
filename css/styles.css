@@ -1161,13 +1161,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 1199px) {
-  .container {
-    flex-wrap: wrap;
-  }
-}
-
-/* @media screen and (min-width: 992px) and (max-width: 1199px)  */
-@media screen and (max-width: 1199px) {
   .item-card:last-child {
     display: none;
   }
@@ -1178,12 +1171,12 @@ footer h4 {
     gap: 10px;
   }
   .container {
+    flex-wrap: wrap;
     gap: 100px;
     justify-content: space-evenly;
   }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 991px) */
 @media screen and (max-width: 991px) {
   .wrap-hero {
     flex-wrap: wrap;
@@ -1282,7 +1275,6 @@ footer h4 {
   }
 }
 
-/* @media screen and (min-width: 540px) and (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .wrap-header {
     padding: 0 23px;
