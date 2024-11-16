@@ -31,8 +31,6 @@ header {
 
   display: flex;
   justify-content: space-between;
-
-  border: 1px solid red;
 }
 
 .logo {
@@ -284,8 +282,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin: 12px auto 46px auto;
-
-  border: 1px solid red;
 }
 
 .hero {
@@ -314,8 +310,6 @@ h1 {
   max-width: 1200px;
   display: block;
   margin: 0 auto 94px auto;
-
-  border: 1px solid red;
 }
 
 .wrap-section {
@@ -619,8 +613,6 @@ option {
   max-width: 1200px;
   display: block;
   margin: 0 auto 100px auto;
-
-  border: 1px solid red;
 }
 
 .feature-list {
@@ -787,8 +779,6 @@ h2 {
   display: flex;
   gap: 30px;
   margin-bottom: 24px;
-
-  border: 1px solid red;
 }
 
 .benefits-list {
@@ -897,8 +887,6 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding: 27px 23px;
-
-  border: 1px solid red;
 }
 
 .address-img {
@@ -929,8 +917,6 @@ footer {
   padding: 33px 155px 27px 25px;
   justify-content: space-between;
   margin-bottom: 6px;
-
-  border: 1px solid red;
 }
 
 .wrapper-footer {
@@ -1325,5 +1311,45 @@ footer h4 {
 
   .header-pay {
     margin-bottom: 23px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .nav-product {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .option-sort {
+    margin-left: auto;
+    flex-direction: column;
+    align-items: start;
+  }
+  .benefits-list {
+    flex-direction: column;
+  }
+  .benefits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-text {
+    text-align: center;
+  }
+  .wrap-social {
+    flex-direction: column;
+  }
+
+  .input-wrap input {
+    width: 100%;
+  }
+
+  .wrap-address {
+    padding: 23px;
+  }
+
+  .wrap-footer {
+    gap: 4px;
   }
 }
