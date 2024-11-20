@@ -1161,6 +1161,10 @@ footer h4 {
     gap: 100px;
     justify-content: space-evenly;
   }
+
+  .wrap-pages {
+    padding: 0 23px;
+  }
 }
 
 @media screen and (max-width: 991px) {
